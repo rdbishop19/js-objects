@@ -80,3 +80,44 @@ console.log(`Wardrobe height is ${wardrobe.height} inches.`);
 console.log(`Wardrobe manufacturer is ${wardrobe.manufacturer}.`);
 console.log("Wardrobe contents:", wardrobe.contents);
 console.log(`Wardrobe depth x width is ${wardrobe.depth} inches x ${wardrobe.width} inches.`);
+
+/* 
+Time to practice dot and square-bracket notation. Use the 
+following object to complete the lightning exercises below.
+ */
+const empireStateBuilding = {
+    stories: 103,
+    height: 1453,
+    address: "350 Fifth Avenue, Manhattan, New York 10118",
+    squareFeet: 2768591,
+    constructionDate: 1931,
+    cost: 40948900,
+    owner: "Empire State Realty Trust",
+    eastWestLength: 424,
+    northSouthLength: 187,
+    architect: "Shreve, Lamb & Harmon"
+}
+
+/* 
+Lightning Exercises 1: Use dot notation to output all of the dimensions 
+of the Empire State Building to the console.
+ */
+
+
+/* 
+Lightning Exercises 2: Use square bracket notation to output the remaining 
+5 properties to the console. Create 5 variables first with the keys as their values. 
+Use those variables to look up the values. 
+*/
+
+const addressKey = "address"
+const constructionKey = "constructionDate"
+const ownerKey = "owner"
+const costKey = "cost"
+const architectKey = "architect"
+
+const outputStr = `The Empire State Building is at ${empireStateBuilding[addressKey]}. 
+It was built in ${empireStateBuilding[constructionKey]} by ${empireStateBuilding[architectKey]}.
+It cost ${empireStateBuilding[costKey]} and is owned by ${empireStateBuilding[ownerKey]}.`
+
+console.log(outputStr)
