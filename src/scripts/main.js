@@ -136,24 +136,69 @@ Use those variables to look up the values.
 /* 
 LIGHTNING EXERCISE: Examine the object below.
  */
-const nashvilleSoftwareSchool = {
-	founded: 2012,
-	director: 'John Wark',
-	instructors: {
-		fullTime: [ 'Jisie', 'Brenda', 'Steve', 'Joe', 'Andy' ],
-		partTime: [ 'Zoe', 'Nathan' ]
-	},
-	address: '500 Interstate Blvd. S'
-};
+// const nashvilleSoftwareSchool = {
+// 	founded: 2012,
+// 	director: 'John Wark',
+// 	instructors: {
+// 		fullTime: [ 'Jisie', 'Brenda', 'Steve', 'Joe', 'Andy' ],
+// 		partTime: [ 'Zoe', 'Nathan' ]
+// 	},
+// 	address: '500 Interstate Blvd. S'
+// };
 
 /* 
 Lightning Exercise 1: Output the names of the part-time instructors followed by the names 
 of the full-time instructors in the console.
  */
-console.log(`The part-time instructors at NSS are ${printArray(nashvilleSoftwareSchool.instructors.partTime)}.`);
-console.log(`The full-time instructors at NSS are ${printArray(nashvilleSoftwareSchool.instructors.fullTime)}.`);
+// console.log(`The part-time instructors at NSS are ${printArray(nashvilleSoftwareSchool.instructors.partTime)}.`);
+// console.log(`The full-time instructors at NSS are ${printArray(nashvilleSoftwareSchool.instructors.fullTime)}.`);
 
 /* 
 Lightning Exercise 2: Output only Andy and Zoe in the console.
  */
-console.log(`Two of the NSS instructors are ${nashvilleSoftwareSchool.instructors.fullTime[4]} and ${nashvilleSoftwareSchool.instructors.partTime[0]}.`)
+// console.log(`Two of the NSS instructors are ${nashvilleSoftwareSchool.instructors.fullTime[4]} and ${nashvilleSoftwareSchool.instructors.partTime[0]}.`)
+
+const beatles = {
+    albums: ["Abbey Road", "Sgt Peppers Lonely Heart's Club Band", "Revolver", "Magical Mystery Tour", "Something New"],
+    history: {
+        formed: 1960,
+        disbanded: 1970
+    },
+    members: [
+        {
+            name: "George Harrison",
+            birth: 1943,
+            death: 2001
+        },
+        {
+            name: "Paul McCartney",
+            birth: 1942,
+            death: null
+        },
+        {
+            name: "John Lennon",
+            birth: 1940,
+            death: 1980
+        },
+        {
+            name: "Ringo Starr",
+            birth: 1940,
+            death: null
+        }
+    ]
+}
+
+/* 
+Output the following value to the console.
+
+"Paul McCartney was in the Beatles from 1960 to 1970. He was born in 1942. 
+He contributed heavily to the Magical Myster Tour Album."
+ */
+
+console.log(`${beatles.members[1].name} was in the Beatles from ${beatles.history.formed} to ${beatles.history.disbanded}. He was born in ${beatles.members[1].birth}. 
+	He contributed heavily to the ${beatles.albums[3]} Album.`);
+// console.log(beatles.members[1].name);
+// console.log(beatles.history.formed);
+// console.log(beatles.history.disbanded);
+// console.log(beatles.members[1].birth);
+// console.log(beatles.albums[3])
